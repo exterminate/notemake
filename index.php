@@ -37,6 +37,13 @@ $formpage = new Display(
     array("use" => "404.php", "default" => "Add content here!") // what other pages to bring in and what to pass to it
     );
 
+$getFormpage = new Display(
+    "/form", // page
+    "enter note", // title
+    array("method" => "post", "use" => "404.php", "default" => "Add content here!") // what other pages to bring in and what to pass to it
+    );
+
+
     
 $app->run_app($page, array($homepage, $formpage));
   
